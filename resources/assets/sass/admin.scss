@@ -1,0 +1,64 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+@import "~font-awesome/scss/font-awesome.scss";
+
+// Multiselect
+@import "~vue-multiselect/dist/vue-multiselect.min";
+
+[v-cloak] {display: none}
+
+.box-tools {
+  float: right;
+}
+
+.VueTables{
+  table{
+    //table-layout:fixed;
+    .row-danger{
+      background-color: lighten($brand-danger, 40%);
+      border: solid 1px $brand-danger;
+      &:hover{
+        background-color: lighten($brand-danger, 35%)
+      }
+    }
+    .row-danger:nth-of-type(odd){
+      background-color: lighten($brand-danger, 38%);
+      &:hover{
+        background-color: lighten($brand-danger, 33%)
+      }
+    }
+    th.VueTables__sortable{
+      white-space: nowrap;
+      position: relative;
+      padding-right: 30px;
+      .VueTables__heading{
+
+      }
+      .VueTables__sort-icon{
+        cursor: pointer;
+        position: absolute;
+        top: 14px;
+        right: 10px;
+      }
+    }
+    .actions_class{
+      white-space: nowrap;
+      a{
+        margin: 0 2px;
+      }
+    }
+  }
+  .VueTables__search{
+    input{
+      margin: 0 5px;
+    }
+  }
+}
